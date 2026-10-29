@@ -1,0 +1,8 @@
+{
+  "name": "RtoC LABS — Reason to Create",
+  "description": "Youth-focused digital skills academy, artificial intelligence innovation, and technology development platform. Don't Just Use Technology. Learn to Create With It.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

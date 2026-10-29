@@ -1,0 +1,809 @@
+# PROJECT: RtoC LABS — REASON TO CREATE
+## Premium Corporate Website, Digital Skills Academy & Technology Innovation Platform
+
+Act as a world-class UI/UX designer, senior full-stack developer, brand strategist, conversion optimization specialist, and technology consultant.
+
+Your task is to design and build a complete, premium, production-ready corporate website for **RtoC LABS**, whose full name is **Reason to Create**.
+
+RtoC LABS is a youth-focused technology, digital skills, artificial intelligence, creativity, and innovation company dedicated to empowering young people with practical skills that can help them create solutions, develop careers, start businesses, and participate meaningfully in the digital economy.
+
+The website must communicate that RtoC LABS is more than a training organization. It is a technology and innovation ecosystem where young people learn, experiment, create, collaborate, develop digital products, and discover career opportunities.
+
+Build a website that feels as polished as an established international technology company while remaining relevant, accessible, and affordable for young people in Kenya and across Africa.
+
+Do not create just a landing-page mockup. Build a cohesive, responsive website with real navigation, functional buttons, usable forms, structured service pages, registration flows, and a maintainable architecture.
+
+---
+
+# 1. BRAND IDENTITY AND POSITIONING
+
+**Brand name:** RtoC LABS
+
+**Full meaning:** Reason to Create
+
+**Brand positioning:** A youth-focused digital skills, AI innovation, technology development, and creative learning company.
+
+**Primary brand message:**
+"Don't Just Use Technology. Learn to Create With It."
+
+**Supporting tagline:**
+"Empowering Young People Through AI, Technology, Creativity and Digital Skills."
+
+**Brand philosophy:**
+Every young person has the potential to create something meaningful. RtoC LABS provides the skills, tools, guidance, and learning environment to turn curiosity into competence and ideas into practical solutions.
+
+**Mission:**
+To equip young people with practical digital skills, responsible AI knowledge, creative confidence, and technology capabilities that enable them to solve problems, build projects, and pursue meaningful opportunities.
+
+**Vision:**
+To become a trusted African technology and innovation ecosystem that empowers the next generation of digital creators, entrepreneurs, developers, and problem-solvers.
+
+**Core values:**
+- Creativity and innovation.
+- Responsible technology and ethical AI.
+- Independent thinking and problem-solving.
+- Practical, project-based learning.
+- Accessibility and inclusion.
+- Integrity and continuous improvement.
+- Entrepreneurship and digital empowerment.
+
+Use these statements as proposed brand copy that can be edited through the website's content configuration.
+
+---
+
+# 2. VISUAL DESIGN SYSTEM
+
+Create an exceptionally polished, modern corporate identity.
+
+## Color palette
+
+- Deep navy: #071426
+- Midnight blue: #0B1F3A
+- Electric blue: #2563EB
+- Bright cyan: #22D3EE
+- Innovation purple: #8B5CF6
+- White: #FFFFFF
+- Light background: #F5F8FC
+- Secondary text: #64748B
+
+Use dark navy backgrounds for selected hero sections and technology showcases, with clean white or very light backgrounds for service descriptions, learning programs, company information, and contact sections.
+
+Use gradients sparingly to highlight important elements. Avoid turning every section into a neon effect.
+
+## Typography
+
+Use a modern, highly readable font pairing, such as Inter for body text and Space Grotesk for headings.
+
+Use:
+- Strong, memorable headings.
+- Clear hierarchy.
+- Generous whitespace.
+- Consistent margins and section spacing.
+- Rounded cards with subtle shadows.
+- Refined icons.
+- Smooth but restrained transitions.
+- Accessible color contrast.
+
+## Brand logo
+
+Create a clean, scalable RtoC LABS wordmark with a distinctive abstract symbol representing reasoning, creativity, connection, and creation.
+
+The logo should work on light and dark backgrounds, in the navigation bar, footer, social media graphics, and future brand materials.
+
+Do not invent an existing registered logo, certification, or brand award.
+
+---
+
+# 3. WEBSITE STRUCTURE
+
+Create the following main pages:
+
+1. Home
+2. About Us
+3. Programs and Digital Skills Academy
+4. Individual Program Details
+5. Technology and Development Services
+6. Innovation Projects and Portfolio
+7. Resources and Blog
+8. Contact Us
+9. Apply or Register
+10. Privacy Policy and Terms of Use
+
+Use a consistent navigation bar with the RtoC LABS logo, links to the most important sections, a visible "Explore Programs" action, and a prominent "Get Started" button.
+
+On mobile, use a well-designed collapsible navigation menu.
+
+The header should remain easy to navigate on long pages. Include subtle scroll behavior without distracting animation.
+
+---
+
+# 4. HOMEPAGE — CREATE A POWERFUL FIRST IMPRESSION
+
+## Hero section
+
+Design a premium hero section that immediately explains what RtoC LABS does.
+
+Use this headline:
+
+**YOUR FUTURE IS DIGITAL. YOUR IDEAS CAN CHANGE THE WORLD.**
+
+Supporting copy:
+
+"Discover the skills, tools, and confidence to create with technology. Learn artificial intelligence, digital media, software development, graphic design, and more with RtoC LABS."
+
+Primary CTA: "Explore Our Programs"
+
+Secondary CTA: "Discover RtoC LABS"
+
+Add a concise supporting line:
+
+"Learn a skill. Build a project. Create your future."
+
+## Hero visuals
+
+Show authentic, diverse African young people working together in a modern digital learning environment.
+
+Include laptops, website interfaces, AI-assisted creative workflows, coding screens, graphic design, and digital media production.
+
+The imagery should communicate ambition, collaboration, practical learning, and innovation.
+
+Avoid excessive robots, generic corporate stock imagery, unrealistic holograms, and exaggerated futuristic visuals.
+
+Use authentic photography or premium visual assets. Do not generate fake testimonials, fake student results, or fabricated client logos.
+
+## Trust and value strip
+
+Directly below the hero, display four concise pillars:
+
+- Practical Digital Skills
+- Responsible AI Innovation
+- Creative Problem-Solving
+- Career and Business Development
+
+Do not display fabricated statistics, enrollment numbers, accreditation badges, or partnerships.
+
+## Introduction section
+
+Heading: "Technology Is More Than a Tool. It's an Opportunity to Create."
+
+Explain that RtoC LABS helps learners move beyond consuming digital content toward creating websites, applications, digital media, visual designs, connected devices, and innovative solutions.
+
+Emphasize learning by doing, independent thinking, and the practical application of skills.
+
+## Featured programs
+
+Display attractive cards for the five major learning areas:
+
+1. Artificial Intelligence and Smart Thinking
+2. Media, Journalism and Content Creation
+3. Technology and Software Development
+4. Graphic Design and Visual Communication
+5. Financial Literacy and Forex Education
+
+Each card must include:
+- A distinctive icon or visual.
+- A concise description.
+- Example skills covered.
+- A "View Program" link.
+- A "Register Interest" action.
+
+Use consistent card dimensions, responsive layouts, and accessible interactions.
+
+## How learning works
+
+Present a simple four-step learning journey:
+
+1. Discover — Choose a skill or learning pathway.
+2. Learn — Build foundational knowledge with practical guidance.
+3. Create — Apply what you learn to a real project.
+4. Grow — Develop a portfolio and explore further opportunities.
+
+Explain that actual program formats, duration, mentorship, and deliverables depend on the specific program.
+
+## Why RtoC LABS?
+
+Feature:
+- Learning focused on practical skills.
+- Responsible and productive use of AI.
+- Creativity and independent thinking.
+- Project-oriented development.
+- Exposure to digital tools used across industries.
+- Exploration of freelancing and entrepreneurship.
+- Opportunities for continuous learning and improvement.
+
+Do not promise guaranteed employment, income, clients, or business success.
+
+## Innovation showcase
+
+Create a section titled:
+
+"From Ideas to Real-World Solutions."
+
+Include a professional portfolio layout for:
+- Website and application projects.
+- AI-assisted productivity and creative projects.
+- Graphic design and branding.
+- Journalism and digital storytelling.
+- Database solutions.
+- IoT concepts and prototypes.
+
+Initially, use clearly labeled illustrative demo projects only. Make it easy to replace them with real RtoC LABS projects later.
+
+Each portfolio item should support a project image, title, description, technology or tools used, and optional project link.
+
+## Final homepage CTA
+
+Headline:
+
+"YOUR TALENT IS YOUR STARTING POINT. YOUR SKILLS CAN TAKE YOU FURTHER."
+
+Copy:
+
+"Take the next step toward becoming a creator, innovator, developer, designer, or digital professional."
+
+Buttons:
+- Explore Learning Programs
+- Contact RtoC LABS
+
+---
+
+# 5. DETAILED PROGRAMS AND LEARNING PATHWAYS
+
+Build a dedicated Programs page with searchable or filterable program cards and individual program detail pages.
+
+## PROGRAM A: ARTIFICIAL INTELLIGENCE AND SMART THINKING
+
+Description:
+
+"Learn how to use AI responsibly and productively while developing the independent thinking needed to turn ideas into useful solutions."
+
+Topics:
+- Introduction to artificial intelligence.
+- Prompt engineering and effective AI interaction.
+- AI tools for research, learning, and productivity.
+- AI-assisted content and visual creation.
+- Critical thinking and problem-solving.
+- Creativity and idea development.
+- Responsible AI use, privacy, and fact-checking.
+- Building practical projects with AI tools.
+
+Suitable for beginners, learners, creators, entrepreneurs, and aspiring technology professionals.
+
+CTA: "Explore AI Training"
+
+## PROGRAM B: MEDIA, JOURNALISM AND CONTENT CREATION
+
+Description:
+
+"Develop digital storytelling and media production skills for journalism, content creation, communication, and social media."
+
+Topics:
+- Journalism fundamentals and digital storytelling.
+- Video editing and production.
+- Social media management.
+- Digital marketing fundamentals.
+- Content planning and publishing.
+- Branding and audience engagement.
+- Mobile content production.
+- AI-assisted media workflows and ethical content practices.
+
+CTA: "Explore Media Training"
+
+## PROGRAM C: TECHNOLOGY AND SOFTWARE DEVELOPMENT
+
+Description:
+
+"Build a foundation in digital technology and learn how websites, databases, applications, and connected devices work."
+
+Topics:
+- Web development and website creation.
+- Front-end development fundamentals.
+- Introduction to back-end development.
+- Database design and management.
+- Programming fundamentals.
+- Internet of Things (IoT) concepts and development.
+- Technology integration in everyday life and business.
+- Project planning, testing, and documentation.
+
+CTA: "Explore Technology Training"
+
+## PROGRAM D: GRAPHIC DESIGN AND VISUAL COMMUNICATION
+
+Description:
+
+"Learn to transform ideas into compelling visual communication for brands, organizations, businesses, and digital platforms."
+
+Topics:
+- Graphic design principles.
+- Layout, typography, and color theory.
+- Digital design tools.
+- Branding and visual identity.
+- Posters and promotional materials.
+- Social media graphics.
+- Presentation design.
+- Portfolio development.
+
+CTA: "Explore Design Training"
+
+## PROGRAM E: FINANCIAL LITERACY AND FOREX EDUCATION
+
+Description:
+
+"Build foundational knowledge of personal finance and learn about financial markets, forex concepts, trading discipline, and risk management."
+
+Topics:
+- Personal financial literacy.
+- Introduction to financial markets.
+- Understanding currency pairs and forex terminology.
+- Market fundamentals.
+- Chart-reading fundamentals.
+- Risk management and position sizing concepts.
+- Trading psychology and discipline.
+- Demo-based practice and trading safety.
+
+Important fee distinction:
+
+The advertised forex classes have a **KSh 1,000 commitment fee**, as specified in the original program information. This amount is separate from the general digital skills conference fee.
+
+Explain that forex trading involves substantial risk and that losses are possible. Do not promise profits, guaranteed returns, financial freedom, or successful trading outcomes. Clearly distinguish education from investment advice.
+
+CTA: "Enquire About Forex Education"
+
+## Additional learning opportunities
+
+Include an expandable section for future programs, workshops, bootcamps, and specialized learning tracks.
+
+Only display a program as available for enrollment when its status has been configured as open.
+
+Provide editable fields for each program:
+- Name.
+- Overview.
+- Topics.
+- Learning outcomes.
+- Target audience.
+- Delivery method.
+- Duration.
+- Schedule.
+- Fee.
+- Registration status.
+- Registration link.
+
+Do not invent missing fees, schedules, qualifications, certificates, or delivery commitments.
+
+---
+
+# 6. DIGITAL TECHNOLOGY AND CREATIVE SERVICES
+
+RtoC LABS should also have a professional services section for clients who need digital solutions.
+
+Present the following as service offerings, subject to actual project scope and availability.
+
+## Website development
+
+Professional, responsive websites for businesses, schools, organizations, personal brands, and entrepreneurs.
+
+Services may include:
+- Business websites.
+- Landing pages.
+- Portfolio websites.
+- E-commerce solutions.
+- Website redesigns.
+- Website maintenance.
+
+## Software and database solutions
+
+Help clients organize information and improve digital workflows.
+
+Services may include:
+- Database design.
+- Data organization systems.
+- Business information systems.
+- Workflow automation.
+- Application development.
+- System documentation and maintenance.
+
+## Graphic design and branding
+
+Services may include:
+- Brand identity design.
+- Posters and promotional materials.
+- Social media graphics.
+- Business presentations.
+- Digital advertising creatives.
+- Visual communication materials.
+
+## Media and digital marketing
+
+Services may include:
+- Video editing.
+- Digital content production.
+- Social media management.
+- Content strategy.
+- Digital campaign materials.
+- Online brand communication.
+
+## AI integration and digital productivity
+
+Services may include:
+- AI-assisted business workflows.
+- Productivity tool setup.
+- AI usage training.
+- Workflow analysis.
+- Responsible AI adoption guidance.
+- Digital process improvement.
+
+## IoT and technology innovation
+
+Showcase the potential for connected-device concepts, automation prototypes, and technology experiments.
+
+Explain that project feasibility, hardware, cost, and implementation depend on individual requirements.
+
+Each service page must contain:
+- A clear explanation.
+- Key deliverables.
+- Ideal client profiles.
+- Relevant portfolio examples.
+- A "Request a Quote" button.
+- A functional inquiry form.
+
+Do not claim completed client work unless genuine project examples are supplied.
+
+---
+
+# 7. ABOUT RtoC LABS
+
+Create a compelling About page that explains the meaning behind "Reason to Create."
+
+Use the headline:
+
+"Every Great Solution Begins With a Reason to Create."
+
+Tell the brand story around curiosity, learning, creativity, technology, and the belief that young people can become active creators of solutions rather than passive consumers of technology.
+
+Include:
+- Company introduction.
+- Mission and vision.
+- Core values.
+- Our approach to learning.
+- Responsible AI and technology.
+- Commitment to practical skills.
+- Youth innovation and digital empowerment.
+
+Provide editable sections for the founder's message, leadership profiles, organizational history, and future goals.
+
+Do not invent founder names, biographies, office locations, registration status, awards, partnerships, or years of operation.
+
+---
+
+# 8. REGISTRATION AND CONFERENCE ENROLLMENT
+
+Create a dedicated enrollment page for training programs and the RtoC LABS digital skills learning conference.
+
+The conference information currently supplied is:
+
+- **Dates:** 9 November to 30 November 2026.
+- **Delivery venue:** Google Meet.
+- **General conference fee:** KSh 3,000 or US$25.
+- **Registration contact:** +254795756208.
+- **Meeting access:** The Google Meet link will be sent upon payment.
+
+The KSh 1,000 commitment fee applies specifically to the forex classes, not automatically to every conference or training activity.
+
+Make the general conference fee and the forex commitment fee visibly distinct.
+
+## Registration form
+
+Collect only necessary information:
+- Full name.
+- Email address.
+- WhatsApp or phone number.
+- Country.
+- Age range, if needed for appropriate program arrangements.
+- Program of interest.
+- Learning goals.
+- Preferred contact method.
+- Consent to the privacy notice.
+
+Do not collect passwords, payment card numbers, or unnecessary sensitive information.
+
+Include client-side validation, clear error messages, a submission confirmation, loading states, and an accessible form layout.
+
+The form must submit to a configured backend or form-processing endpoint. If no backend exists, clearly mark the integration as pending and provide a working WhatsApp inquiry fallback.
+
+## Payment workflow
+
+Create a professional payment information section showing the published fee and instructions.
+
+Provide configurable payment methods, payment references, payment status, and a confirmation process.
+
+Do not invent an M-Pesa till number, paybill, bank account, payment gateway, or payment credentials.
+
+Payment verification must occur through a legitimate configured payment provider or an authorized administrative workflow. Never treat a client-side success message or screenshot alone as verified payment.
+
+After successful payment verification, show an appropriate confirmation and provide the configured process for receiving the Google Meet link.
+
+The meeting URL must not be exposed publicly if access is intended only for registered participants.
+
+Clearly explain that registration is subject to confirmation and that any additional terms or refund conditions must be supplied and published by the organization.
+
+The conference dates are time-sensitive. Once the conference ends, automatically change its status to "Registration Closed" unless an administrator publishes a new session.
+
+---
+
+# 9. CONTACT PAGE AND WHATSAPP INTEGRATION
+
+Build a clean contact page containing:
+- A contact form.
+- General inquiries.
+- Training inquiries.
+- Website and technology service inquiries.
+- Partnership inquiries.
+- WhatsApp contact.
+- Social media links.
+
+Use the supplied WhatsApp number:
+
+**+254795756208**
+
+Add a floating WhatsApp contact button that opens a conversation with this number.
+
+Use the appropriate WhatsApp URL format with country code 254 and digits only. Pre-fill a friendly message such as:
+
+"Hello RtoC LABS, I would like to learn more about your digital skills programs and services."
+
+Also provide context-aware inquiry buttons, such as:
+- Enquire About AI Training.
+- Register for the Conference.
+- Request a Website Quote.
+- Enquire About Graphic Design.
+- Ask About Media Training.
+
+Each button should open WhatsApp with a relevant pre-filled message or route to the correct inquiry form.
+
+Do not invent an email address, physical address, social media handle, or business telephone number beyond the contact information supplied.
+
+---
+
+# 10. RESOURCES AND BLOG
+
+Create a professional resource hub with categories for:
+- Artificial intelligence.
+- Digital skills.
+- Web development.
+- Graphic design.
+- Content creation.
+- Digital entrepreneurship.
+- Financial literacy.
+- Responsible technology.
+
+Build article pages with:
+- Title.
+- Cover image.
+- Author field.
+- Publication date.
+- Reading time.
+- Article content.
+- Related resources.
+- Share controls.
+
+Provide sample placeholder articles only when clearly identified as demonstration content.
+
+Make it possible to connect a CMS or administrative content system in the future.
+
+Include search, category filters, and responsive article layouts.
+
+---
+
+# 11. INNOVATION PORTFOLIO
+
+Create a dedicated portfolio showcasing the type of work RtoC LABS develops and teaches.
+
+Portfolio categories:
+- Web development.
+- Software and databases.
+- AI-assisted projects.
+- Graphic design.
+- Digital media.
+- IoT and prototypes.
+
+Every portfolio item should have:
+- Project title.
+- Project category.
+- Project overview.
+- Tools or technologies used.
+- Image or demonstration.
+- Project status.
+- Optional public link.
+
+Clearly differentiate demo concepts, student projects, prototypes, and completed client projects.
+
+Do not fabricate customers, client logos, project results, or endorsements.
+
+---
+
+# 12. ADMINISTRATION AND CONTENT MANAGEMENT
+
+Where supported by the selected technology stack, create a secure administrative dashboard or integrate a suitable CMS.
+
+Authorized administrators should be able to manage:
+- Programs and their fees.
+- Registration availability.
+- Conference dates and status.
+- Contact inquiries.
+- Service descriptions.
+- Portfolio entries.
+- Blog posts.
+- Social links.
+- Approved testimonials.
+- Payment confirmation records.
+- Enrollment confirmations.
+
+Use secure authentication and role-based authorization for administrative functions.
+
+Store sensitive data securely. Never expose secret API keys, payment credentials, or administrator permissions in client-side code.
+
+Add basic spam protection and appropriate rate limiting to public forms.
+
+If the chosen platform cannot support a full administrative dashboard, build the frontend with a documented integration plan rather than pretending the backend is functional.
+
+---
+
+# 13. TECHNICAL REQUIREMENTS
+
+Use a modern, maintainable technology stack supported by the selected development environment.
+
+Preferred stack:
+- React.
+- TypeScript.
+- Next.js or an equivalent modern React framework.
+- Tailwind CSS.
+- A reusable component system.
+- Supabase or another secure backend for authentication, database, and form processing when required.
+
+Use the simplest suitable architecture for the actual hosting environment.
+
+## Required implementation standards
+
+- Responsive layouts for phones, tablets, laptops, and desktop displays.
+- Semantic HTML and accessible form labels.
+- Keyboard navigation and visible focus states.
+- Reusable components and consistent design tokens.
+- Optimized images and lazy loading where appropriate.
+- Fast initial page loads.
+- Search-engine-friendly URLs and metadata.
+- Open Graph metadata for social sharing.
+- A branded favicon.
+- Custom 404 and error states.
+- Clear loading, empty, and success states.
+- Secure handling of form submissions.
+- Server-side validation for sensitive operations.
+- No exposed secrets or API keys.
+- No dead links or nonfunctional buttons.
+- No fabricated business claims or testimonials.
+
+Use appropriate analytics only when configured with a legitimate provider and a suitable privacy notice.
+
+Add a sitemap, robots configuration, canonical metadata where appropriate, and structured data only for claims that are accurate and verifiable.
+
+---
+
+# 14. USER EXPERIENCE AND CONVERSION DESIGN
+
+The website must be easy for a first-time visitor to understand.
+
+A visitor should quickly be able to answer:
+1. What is RtoC LABS?
+2. What skills and services are available?
+3. Who can benefit?
+4. How do I register or request a service?
+5. How do I contact the organization?
+
+Use clear calls to action throughout the website.
+
+Recommended CTA hierarchy:
+- Explore Programs.
+- Register for Training.
+- Request a Digital Service.
+- View Our Projects.
+- Contact Us.
+
+Avoid excessive pop-ups, aggressive countdown timers, manipulative urgency, or misleading scarcity messages.
+
+Add appropriate mobile spacing and make important buttons easy to tap.
+
+---
+
+# 15. FOOTER DESIGN
+
+Create a premium multi-column footer containing:
+
+**RtoC LABS — Reason to Create**
+
+"Empowering Young People Through AI, Technology, Creativity and Digital Skills."
+
+Column 1: Explore
+- About Us.
+- Programs.
+- Innovation Portfolio.
+- Resources.
+
+Column 2: Services
+- Website Development.
+- Software and Databases.
+- Graphic Design.
+- Media and Digital Marketing.
+- AI and Digital Productivity.
+
+Column 3: Get Involved
+- Register for Training.
+- Request a Quote.
+- Contact Us.
+- Partnership Inquiries.
+
+Column 4: Contact
+- WhatsApp: +254795756208.
+- Configurable email address.
+- Configurable social media links.
+
+Include links to the Privacy Policy and Terms of Use, plus a copyright notice using the current year.
+
+Do not display empty social icons or invented contact details. Hide optional items until the actual details are provided.
+
+---
+
+# 16. FINAL DESIGN DIRECTION
+
+The final website should feel like a premium technology company with the creativity of a digital studio and the practical orientation of a skills academy.
+
+Use the following design principles:
+- Strong editorial layouts.
+- Elegant dark and light section transitions.
+- Clean service cards.
+- Carefully selected illustrations and photography.
+- Subtle hover effects.
+- Smooth scrolling where appropriate.
+- Restrained gradient accents.
+- Responsive navigation.
+- Excellent typography.
+- Consistent visual rhythm.
+- Realistic content and professional copywriting.
+
+Avoid:
+- Generic AI-generated corporate templates.
+- Excessive glowing effects.
+- Overcrowded layouts.
+- Fake testimonials.
+- Fake statistics.
+- Fake awards or certifications.
+- Unverified claims about employment or earnings.
+- Nonfunctional forms.
+- Hard-coded demo payment confirmations.
+- Broken image links.
+- Lorem ipsum placeholder text in finished pages.
+
+Use polished, meaningful sample content wherever the business information is known. For missing business details, provide editable configuration fields rather than inventing facts.
+
+---
+
+# 17. BUILD AND DELIVERY INSTRUCTIONS
+
+Work in the following order:
+
+1. Establish the design system, navigation, and reusable components.
+2. Build the responsive homepage.
+3. Build the About, Programs, Services, Portfolio, Resources, and Contact pages.
+4. Build registration and conference information flows.
+5. Implement WhatsApp contact links.
+6. Implement functional form handling and backend integration where credentials and configuration are available.
+7. Add privacy, security, accessibility, and SEO foundations.
+8. Test all navigation links, forms, buttons, validation, and mobile layouts.
+9. Resolve errors and broken assets.
+10. Provide clear setup and deployment instructions.
+
+Do not stop after generating a static homepage. Implement the actual working functionality supported by the environment and clearly document any integrations that require external credentials or configuration.
+
+The finished result should be a polished, credible, scalable corporate website that positions RtoC LABS as a serious organization helping young people learn, create, innovate, and build their future through technology.
+
+**RtoC LABS — REASON TO CREATE.**
+
+**Don't Just Use Technology. Learn to Create With It.**
