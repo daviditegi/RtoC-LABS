@@ -30,8 +30,11 @@ import {
   ChevronRight,
   TrendingUp,
   AlertCircle,
-  Printer
+  Printer,
+  Download,
+  Loader2
 } from 'lucide-react';
+import { downloadCertificateImage } from '../utils/certificateGenerator';
 
 interface ProgressTrackerPageProps {
   onNavigate: (page: ActivePage) => void;
@@ -45,6 +48,27 @@ export const ProgressTrackerPage: React.FC<ProgressTrackerPageProps> = ({ onNavi
   const [moduleFilter, setModuleFilter] = useState<'all' | 'completed' | 'pending'>('all');
   const [lookupError, setLookupError] = useState('');
   const [isCertificateOpen, setIsCertificateOpen] = useState(false);
+  const [isDownloadingCert, setIsDownloadingCert] = useState(false);
+
+  const handleDirectDownloadCert = async () => {
+    if (!currentProgress) return;
+    const certId = `RTOC-CERT-${currentProgress.registrationId.replace(/^RTOC-?/i, '') || '842915'}`;
+    try {
+      setIsDownloadingCert(true);
+      await downloadCertificateImage({
+        studentName: currentProgress.studentName,
+        programName: currentProgress.programName,
+        certificateId: certId,
+        capstoneTitle: currentProgress.capstoneTitle,
+        issueDate: 'November 30, 2026',
+      });
+    } catch (err) {
+      console.error('Direct download error:', err);
+      setIsCertificateOpen(true);
+    } finally {
+      setIsDownloadingCert(false);
+    }
+  };
 
   // Auto-load if initialRegId provided or load first demo account
   useEffect(() => {
@@ -404,13 +428,30 @@ export const ProgressTrackerPage: React.FC<ProgressTrackerPageProps> = ({ onNavi
                       </div>
                     </div>
 
-                    <button
-                      onClick={() => setIsCertificateOpen(true)}
-                      className="px-5 py-2.5 rounded-xl text-xs font-semibold bg-emerald-600 hover:bg-emerald-700 text-white flex items-center gap-2 shadow-md transition-all cursor-pointer shrink-0 group"
-                    >
-                      <Award className="w-4 h-4 group-hover:rotate-12 transition-transform text-amber-300" />
-                      <span>View & Download Certificate (PDF)</span>
-                    </button>
+                    <div className="flex flex-wrap items-center gap-2 shrink-0">
+                      <button
+                        onClick={handleDirectDownloadCert}
+                        disabled={isDownloadingCert}
+                        className="px-4 py-2.5 rounded-xl text-xs font-semibold bg-emerald-600 hover:bg-emerald-700 disabled:opacity-60 text-white flex items-center gap-2 shadow-md transition-all cursor-pointer group"
+                        title="Directly download high-resolution certificate file"
+                      >
+                        {isDownloadingCert ? (
+                          <Loader2 className="w-4 h-4 animate-spin" />
+                        ) : (
+                          <Download className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                        )}
+                        <span>{isDownloadingCert ? 'Generating...' : 'Download Certificate'}</span>
+                      </button>
+
+                      <button
+                        onClick={() => setIsCertificateOpen(true)}
+                        className="px-4 py-2.5 rounded-xl text-xs font-semibold bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-800 dark:text-white border border-slate-300 dark:border-slate-700 flex items-center gap-2 shadow-xs transition-all cursor-pointer"
+                        title="Preview, print, or share certificate"
+                      >
+                        <Award className="w-4 h-4 text-amber-500" />
+                        <span>Preview & Share</span>
+                      </button>
+                    </div>
                   </div>
                 ) : (
                   <div className="p-3.5 rounded-xl bg-blue-50/70 dark:bg-blue-950/40 border border-blue-100 dark:border-blue-900 text-xs text-blue-900 dark:text-blue-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">

@@ -13,7 +13,7 @@ export const BRAND_INFO = {
     'To become a trusted African technology and innovation ecosystem that empowers the next generation of digital creators, entrepreneurs, developers, and problem-solvers.',
   whatsappNumber: '+254795756208',
   whatsappRaw: '254795756208',
-  email: 'info@rtoclabs.com',
+  email: 'blendedmoney25@gmail.com',
   location: 'Nairobi, Kenya & Virtual Across Africa',
   currentYear: 2026,
 };

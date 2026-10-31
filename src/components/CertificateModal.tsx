@@ -10,9 +10,12 @@ import {
   Check, 
   MessageCircle,
   ExternalLink,
-  Sparkles
+  Sparkles,
+  Download,
+  Loader2
 } from 'lucide-react';
 import { BRAND_INFO, CONFERENCE_INFO } from '../data/content';
+import { downloadCertificateImage } from '../utils/certificateGenerator';
 
 interface CertificateModalProps {
   isOpen: boolean;
@@ -34,14 +37,41 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({
   issueDate = 'November 30, 2026',
 }) => {
   const [copiedLink, setCopiedLink] = useState(false);
+  const [isDownloading, setIsDownloading] = useState(false);
+  const [downloadSuccess, setDownloadSuccess] = useState(false);
 
   if (!isOpen) return null;
 
   const certificateId = `RTOC-CERT-${registrationId.replace(/^RTOC-?/i, '') || '842915'}`;
   const verificationUrl = `${window.location.origin}/#verify/${certificateId}`;
 
+  const handleDownload = async () => {
+    try {
+      setIsDownloading(true);
+      await downloadCertificateImage({
+        studentName,
+        programName,
+        certificateId,
+        issueDate,
+        capstoneTitle,
+      });
+      setDownloadSuccess(true);
+      setTimeout(() => setDownloadSuccess(false), 3000);
+    } catch (err) {
+      console.error('Direct download error, falling back to print:', err);
+      window.print();
+    } finally {
+      setIsDownloading(false);
+    }
+  };
+
   const handlePrint = () => {
-    window.print();
+    try {
+      window.print();
+    } catch (e) {
+      console.error('Print not supported in this frame:', e);
+      handleDownload();
+    }
   };
 
   const handleCopyLink = () => {
@@ -79,9 +109,25 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({
 
           <div className="flex items-center gap-2">
             <button
+              onClick={handleDownload}
+              disabled={isDownloading}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 hover:bg-emerald-700 disabled:opacity-60 text-white transition-colors cursor-pointer group shadow-xs"
+              title="Download high-resolution certificate image directly"
+            >
+              {isDownloading ? (
+                <Loader2 className="w-3.5 h-3.5 animate-spin" />
+              ) : downloadSuccess ? (
+                <Check className="w-3.5 h-3.5 text-white" />
+              ) : (
+                <Download className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
+              )}
+              <span>{isDownloading ? 'Saving...' : downloadSuccess ? 'Downloaded!' : 'Download'}</span>
+            </button>
+
+            <button
               onClick={handlePrint}
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-[#2563EB] hover:bg-[#1d4ed8] text-white transition-colors cursor-pointer group"
-              title="Print or Save as PDF"
+              title="Print or Save as PDF via system dialog"
             >
               <Printer className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
               <span className="hidden sm:inline">Print / PDF</span>
@@ -263,14 +309,32 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({
             <span>Eligible for LinkedIn, resume portfolios, and client verification.</span>
           </div>
 
-          <div className="flex items-center gap-2 w-full sm:w-auto">
+          <div className="flex flex-wrap items-center gap-2 w-full sm:w-auto">
+            <button
+              onClick={handleDownload}
+              disabled={isDownloading}
+              className="w-full sm:w-auto px-4 py-2 rounded-lg font-semibold bg-emerald-600 hover:bg-emerald-700 disabled:opacity-60 text-white flex items-center justify-center gap-1.5 transition-colors cursor-pointer group shadow-xs"
+              title="Download official high-resolution certificate directly to your device"
+            >
+              {isDownloading ? (
+                <Loader2 className="w-4 h-4 animate-spin" />
+              ) : downloadSuccess ? (
+                <Check className="w-4 h-4 text-white" />
+              ) : (
+                <Download className="w-4 h-4 group-hover:scale-110 transition-transform" />
+              )}
+              <span>{isDownloading ? 'Generating Certificate...' : downloadSuccess ? 'Certificate Downloaded!' : 'Download Certificate'}</span>
+            </button>
+
             <button
               onClick={handlePrint}
               className="w-full sm:w-auto px-4 py-2 rounded-lg font-semibold bg-[#2563EB] hover:bg-[#1d4ed8] text-white flex items-center justify-center gap-1.5 transition-colors cursor-pointer group"
+              title="Print via Browser or Save as PDF"
             >
               <Printer className="w-4 h-4 group-hover:scale-110 transition-transform" />
-              <span>Print / Download PDF</span>
+              <span>Print / PDF</span>
             </button>
+
             <button
               onClick={onClose}
               className="w-full sm:w-auto px-4 py-2 rounded-lg font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-colors cursor-pointer"

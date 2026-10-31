@@ -82,6 +82,8 @@ export interface RegistrationRecord {
   paymentStatus: 'Pending Verification' | 'Payment Verified' | 'Meet Link Sent';
   feePaidNote: string;
   progressPercentage?: number;
+  certificateIssued?: boolean;
+  capstoneTitle?: string;
 }
 
 export interface SkillModule {
