@@ -2,6 +2,7 @@ import React from 'react';
 import { ActivePage } from '../types';
 import { BRAND_INFO } from '../data/content';
 import { MessageCircle, Mail, MapPin, ArrowUpRight, ShieldCheck, Lock } from 'lucide-react';
+import { RtoCBrandLogo } from './RtoCBrandLogo';
 
 interface FooterProps {
   onNavigate: (page: ActivePage) => void;
@@ -20,21 +21,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Brand Lockup & Value Statement */}
         <div className="pb-12 border-b border-slate-800/80 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-5 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#071426] p-0.5 border border-slate-700/80 shadow-md flex items-center justify-center shrink-0">
-                <img
-                  src="/assets/rtoc_r_logo.png"
-                  alt="RtoC LABS R Logo"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div>
-                <span className="text-xl font-bold tracking-tight font-heading">
-                  RtoC <span className="text-[#22D3EE]">LABS</span>
-                </span>
-                <p className="text-xs text-slate-400 font-medium tracking-wide uppercase">Reason to Create</p>
-              </div>
-            </div>
+            <RtoCBrandLogo variant="lockup" size="md" />
             
             <p className="text-sm text-slate-300 max-w-md leading-relaxed">
               "Don't Just Use Technology. Learn to Create With It."

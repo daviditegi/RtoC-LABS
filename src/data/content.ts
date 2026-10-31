@@ -59,7 +59,7 @@ export const CONFERENCE_INFO = {
   contactPhone: '+254795756208',
   accessPolicy: 'Private Google Meet access link is issued immediately following administrative payment verification.',
   status: 'Open for Enrollment',
-  heroImage: '/src/assets/images/conference_virtual_cohort_1793267884307.jpg',
+  heroImage: '/assets/images/conference_virtual_cohort_1793267884307.jpg',
   highlights: [
     'Comprehensive hands-on modules in AI, Web Dev, Media & Visual Design',
     'Interactive live virtual labs with practical screen-share reviews',
@@ -97,7 +97,7 @@ export const PROGRAMS_DATA: Program[] = [
       'Learn how to use AI responsibly and productively while developing the independent thinking needed to turn ideas into useful solutions.',
     overview:
       'This foundational program demystifies modern artificial intelligence for ambitious learners. Rather than passively prompting, you will learn the mechanics of generative AI, prompt engineering architectures, workflow automation, and fact-checking protocols. Most importantly, it stresses critical thinking: assessing when AI is appropriate, preserving originality, and engineering practical AI-assisted solutions.',
-    image: '/src/assets/images/program_ai_and_computing_1793267883663.jpg',
+    image: '/assets/images/program_ai_and_computing_1793267883663.jpg',
     duration: '3 Weeks (Intensive)',
     schedule: 'Evenings & Weekend Interactive Labs',
     deliveryMethod: 'Google Meet Virtual Classroom + Guided Lab Repos',
@@ -138,7 +138,7 @@ export const PROGRAMS_DATA: Program[] = [
       'Develop digital storytelling and media production skills for journalism, content creation, communication, and social media.',
     overview:
       'In a hyper-connected African digital economy, compelling storytelling is an invaluable super-power. This program blends classic journalistic discipline with cutting-edge digital production techniques. Students learn scriptwriting, mobile cinematography, video editing, social distribution algorithms, and audience retention ethics.',
-    image: '/src/assets/images/program_media_journalism_1793267883021.jpg',
+    image: '/assets/images/program_media_journalism_1793267883021.jpg',
     duration: '3 Weeks (Intensive)',
     schedule: 'Scheduled Google Meet Sessions + Production Assignments',
     deliveryMethod: 'Live Online Workshops + Portfolio Critiques',
@@ -179,7 +179,7 @@ export const PROGRAMS_DATA: Program[] = [
       'Build a foundation in digital technology and learn how websites, databases, applications, and connected devices work.',
     overview:
       'Step beyond just browsing the web to engineering the digital platforms of tomorrow. This pathway takes students through web architecture, HTML/CSS/JavaScript foundations, modern component frameworks, API communication, structured relational data, and an introduction to Internet of Things (IoT) hardware prototyping.',
-    image: '/src/assets/images/hero_african_youth_tech_lab_1793267882421.jpg',
+    image: '/assets/images/hero_african_youth_tech_lab_1793267882421.jpg',
     duration: '3 Weeks (Intensive Hands-On)',
     schedule: 'Google Meet Sessions + Collaborative Code Reviews',
     deliveryMethod: 'Interactive Live Coding + GitHub Repository Projects',
@@ -220,7 +220,7 @@ export const PROGRAMS_DATA: Program[] = [
       'Learn to transform ideas into compelling visual communication for brands, organizations, businesses, and digital platforms.',
     overview:
       'Visual literacy is critical for every modern enterprise. In this program, you will develop a discerning design eye and technical mastery of typography, color psychology, layout mathematics, and brand identity systems. You will learn how to design promotional materials, executive presentations, social graphics, and coherent design guidelines.',
-    image: '/src/assets/images/conference_virtual_cohort_1793267884307.jpg',
+    image: '/assets/images/conference_virtual_cohort_1793267884307.jpg',
     duration: '3 Weeks (Studio Intensive)',
     schedule: 'Live Design Workshops + Weekly Peer Design Critiques',
     deliveryMethod: 'Google Meet + Interactive Figma/Design Critiques',
@@ -261,7 +261,7 @@ export const PROGRAMS_DATA: Program[] = [
       'Build foundational knowledge of personal finance and learn about financial markets, forex concepts, trading discipline, and risk management.',
     overview:
       'A principled, realistic educational track designed to teach sound personal money management alongside the mechanics of global currency markets. We emphasize strict trading psychology, capital preservation, position sizing, and chart analysis. Note: This track requires a distinct KSh 1,000 commitment fee and is strictly educational, not financial or investment advice.',
-    image: '/src/assets/images/program_ai_and_computing_1793267883663.jpg',
+    image: '/assets/images/program_ai_and_computing_1793267883663.jpg',
     duration: '3 Weeks (Specialized Track)',
     schedule: 'Virtual Sessions via Google Meet + Demo Lab Analysis',
     deliveryMethod: 'Google Meet Live Lectures + Simulated Demo Practice',
@@ -436,7 +436,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     solutionArchitecture:
       'Built with real-time pip value formulas, currency cross-rate calculations, and automated stop-loss risk boundaries to guarantee capital longevity.',
     tools: ['Financial Mathematics', 'TypeScript', 'Tailwind CSS', 'FX Pip Engines', 'Risk Modeling'],
-    image: '/src/assets/images/program_ai_and_computing_1793267883663.jpg',
+    image: '/assets/images/program_ai_and_computing_1793267883663.jpg',
     status: 'Active Solution',
     keyHighlights: [
       'Strict 1% and 2% maximum account drawdown calculations',
@@ -459,7 +459,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     solutionArchitecture:
       'Aggregates global macroeconomic release schedules, measures historic pip volatility, and signals high-risk windows during interest rate decisions.',
     tools: ['Python', 'FastAPI', 'TradingView Lightweight Charts', 'WebSockets'],
-    image: '/src/assets/images/conference_virtual_cohort_1793267884307.jpg',
+    image: '/assets/images/conference_virtual_cohort_1793267884307.jpg',
     status: 'Student Project',
     keyHighlights: [
       'Real-time countdown to major central bank announcements (Fed, ECB, BoE)',
@@ -482,7 +482,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     solutionArchitecture:
       'Combines trade log metadata with behavioral tagging, win-rate streak analytics, and automated compliance scoring for instructor review.',
     tools: ['Next.js', 'React', 'TypeScript', 'IndexedDB Offline Cache', 'ChartJS'],
-    image: '/src/assets/images/hero_african_youth_tech_lab_1793267882421.jpg',
+    image: '/assets/images/hero_african_youth_tech_lab_1793267882421.jpg',
     status: 'Prototype',
     keyHighlights: [
       'Pre-trade emotional state checklist blocking impulsive trade executions',
@@ -505,7 +505,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     solutionArchitecture:
       'Relational schema design with normalized tables for students, guardian contacts, courses, and exam grades with offline ServiceWorker caching.',
     tools: ['React', 'TypeScript', 'PostgreSQL', 'Tailwind CSS'],
-    image: '/src/assets/images/hero_african_youth_tech_lab_1793267882421.jpg',
+    image: '/assets/images/hero_african_youth_tech_lab_1793267882421.jpg',
     status: 'Illustrative Demo',
     keyHighlights: [
       'Role-based access for teachers, administrators, and parents',
@@ -526,7 +526,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     solutionArchitecture:
       'Low-power ESP32 microcontroller with capacitive soil sensors, solar power buffer, and LoRa wireless transmission to a cloud telemetry dashboard.',
     tools: ['ESP32', 'LoRaWAN', 'C++', 'Cloud Dashboard', 'WebSockets'],
-    image: '/src/assets/images/innovation_iot_prototype_1793267885344.jpg',
+    image: '/assets/images/innovation_iot_prototype_1793267885344.jpg',
     status: 'Prototype',
     keyHighlights: [
       'Solar-powered microcontroller node with 30-day battery buffer',
@@ -547,7 +547,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     solutionArchitecture:
       'Multi-episode short documentary series produced using smartphone cinematography, field audio recording, and verified consent protocols.',
     tools: ['DaVinci Resolve', 'Mobile Rig', 'Audacity', 'Digital Publishing'],
-    image: '/src/assets/images/program_media_journalism_1793267883021.jpg',
+    image: '/assets/images/program_media_journalism_1793267883021.jpg',
     status: 'Student Project',
     keyHighlights: [
       '5-part video documentary series published on digital channels',
@@ -568,7 +568,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     solutionArchitecture:
       'Domain-calibrated prompt engineering templates connected to local payment rate logic, milestone trackers, and contract generators.',
     tools: ['Gemini API', 'TypeScript', 'Next.js', 'Vector Search'],
-    image: '/src/assets/images/program_ai_and_computing_1793267883663.jpg',
+    image: '/assets/images/program_ai_and_computing_1793267883663.jpg',
     status: 'Illustrative Demo',
     keyHighlights: [
       'Custom prompt templates tailored for African freelancing markets',
@@ -589,7 +589,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     solutionArchitecture:
       'Lightweight headless frontend utilizing responsive Tailwind CSS, client-side caching, and WhatsApp direct checkout hooks.',
     tools: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Service Workers'],
-    image: '/src/assets/images/conference_virtual_cohort_1793267884307.jpg',
+    image: '/assets/images/conference_virtual_cohort_1793267884307.jpg',
     status: 'Active Solution',
     keyHighlights: [
       'Sub-1.2s initial page load on 3G cellular connections',
@@ -610,7 +610,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     solutionArchitecture:
       'Engineered a complete brand book detailing vector logo rules, typography scales, high-contrast vehicle wraps, and executive presentation pitch decks.',
     tools: ['Figma', 'Vector Illustration', 'Typography Design', 'Brand Architecture'],
-    image: '/src/assets/images/conference_virtual_cohort_1793267884307.jpg',
+    image: '/assets/images/conference_virtual_cohort_1793267884307.jpg',
     status: 'Illustrative Demo',
     keyHighlights: [
       '32-page corporate brand guidelines specification book',
@@ -631,7 +631,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     solutionArchitecture:
       'Time-slot booking system with automated SMS reminders and provider queue dashboards running on a secure relational database.',
     tools: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'SMS Gateway API'],
-    image: '/src/assets/images/hero_african_youth_tech_lab_1793267882421.jpg',
+    image: '/assets/images/hero_african_youth_tech_lab_1793267882421.jpg',
     status: 'Student Project',
     keyHighlights: [
       'Intuitive 3-step appointment booking without requiring password logins',
@@ -652,7 +652,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     solutionArchitecture:
       'Modbus RS485 communication protocol reading inverter registers, processed by an ESP32 microcontroller and visualized via lightweight WebSocket dashboard.',
     tools: ['ESP32', 'Modbus RS485', 'MQTT', 'C++', 'Tailwind CSS'],
-    image: '/src/assets/images/innovation_iot_prototype_1793267885344.jpg',
+    image: '/assets/images/innovation_iot_prototype_1793267885344.jpg',
     status: 'Prototype',
     keyHighlights: [
       'Accurate battery cycle count and estimated remaining runtime metrics',
@@ -673,7 +673,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     solutionArchitecture:
       'Speech model fine-tuning with regional phonetic dictionaries, automated punctuation correction, and fact-checking assistance.',
     tools: ['Whisper Audio Engine', 'Gemini API', 'Python', 'React UI'],
-    image: '/src/assets/images/program_media_journalism_1793267883021.jpg',
+    image: '/assets/images/program_media_journalism_1793267883021.jpg',
     status: 'Prototype',
     keyHighlights: [
       'High accuracy on mixed Swahili-English conversational dialogue',
@@ -694,7 +694,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     solutionArchitecture:
       'Energetic geometric motif based on African circuit patterns and vibrant electric blue and cyan color contrast.',
     tools: ['Figma', 'Adobe Illustrator', 'Motion Design', 'Print Specifications'],
-    image: '/src/assets/images/conference_virtual_cohort_1793267884307.jpg',
+    image: '/assets/images/conference_virtual_cohort_1793267884307.jpg',
     status: 'Illustrative Demo',
     keyHighlights: [
       'Dynamic speaker cards and agenda schedules for social media sharing',

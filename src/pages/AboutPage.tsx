@@ -114,6 +114,12 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                   src="/assets/aistudio/RtoC_Labs__Reason_to_Create_b6f2ad23.png"
                   alt="Official RtoC LABS Reason to Create Brand Identity"
                   className="w-full h-auto rounded-xl object-contain shadow-md"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (!target.src.endsWith('/RtoC_Labs__Reason_to_Create_b6f2ad23.png')) {
+                      target.src = '/RtoC_Labs__Reason_to_Create_b6f2ad23.png';
+                    }
+                  }}
                 />
                 <div className="p-4 pt-3 space-y-1 text-center">
                   <span className="text-xs font-bold text-[#22D3EE] uppercase tracking-wide">

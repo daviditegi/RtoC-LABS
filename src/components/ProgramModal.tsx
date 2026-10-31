@@ -24,6 +24,12 @@ export const ProgramModal: React.FC<ProgramModalProps> = ({ program, onClose, on
             alt={program.name}
             className="w-full h-full object-cover opacity-40"
             referrerPolicy="no-referrer"
+            onError={(e) => {
+              const target = e.currentTarget;
+              if (target.src.includes('/assets/images/')) {
+                target.src = target.src.replace('/assets/images/', '/images/');
+              }
+            }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#071426] via-[#071426]/60 to-transparent" />
           

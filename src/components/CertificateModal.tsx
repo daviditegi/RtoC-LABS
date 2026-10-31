@@ -182,6 +182,12 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({
                 src="/assets/rtoc_r_logo.png"
                 alt="Watermark"
                 className="w-96 h-96 object-contain"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.src.endsWith('/rtoc_r_logo.png')) {
+                    target.src = '/rtoc_r_logo.png';
+                  }
+                }}
               />
             </div>
 
@@ -193,6 +199,12 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({
                     src="/assets/rtoc_r_logo.png"
                     alt="RtoC LABS Logo"
                     className="w-full h-full object-contain"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (!target.src.endsWith('/rtoc_r_logo.png')) {
+                        target.src = '/rtoc_r_logo.png';
+                      }
+                    }}
                   />
                 </div>
                 <div className="text-left">

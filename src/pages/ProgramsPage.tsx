@@ -177,6 +177,12 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({ onNavigate, onSelect
                       alt={prog.name}
                       className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-300"
                       referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        if (target.src.includes('/assets/images/')) {
+                          target.src = target.src.replace('/assets/images/', '/images/');
+                        }
+                      }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent lg:hidden" />
                     <div className="absolute top-3 left-3">

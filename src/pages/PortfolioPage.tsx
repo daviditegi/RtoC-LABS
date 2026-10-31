@@ -75,7 +75,17 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate, onOpen
           <div className="max-w-3xl space-y-4">
             <div className="inline-flex items-center gap-2 text-xs font-semibold text-[#22D3EE] uppercase tracking-wider">
               <span className="w-6 h-6 rounded-md overflow-hidden bg-slate-900 border border-slate-700/60 inline-flex items-center justify-center p-0.5">
-                <img src="/assets/rtoc_r_logo.png" alt="R Logo" className="w-full h-full object-contain" />
+                <img
+                  src="/assets/rtoc_r_logo.png"
+                  alt="R Logo"
+                  className="w-full h-full object-contain"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (!target.src.endsWith('/rtoc_r_logo.png')) {
+                      target.src = '/rtoc_r_logo.png';
+                    }
+                  }}
+                />
               </span>
               <span>RtoC LABS Reference Portfolio</span>
               <span aria-hidden="true">·</span>
@@ -148,6 +158,12 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate, onOpen
                     alt={item.title}
                     className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-300"
                     referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (target.src.includes('/assets/images/')) {
+                        target.src = target.src.replace('/assets/images/', '/images/');
+                      }
+                    }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
                   

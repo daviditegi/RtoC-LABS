@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ActivePage } from '../types';
 import { BRAND_INFO, CONFERENCE_INFO } from '../data/content';
 import { Menu, X, ArrowRight, Sun, Moon, Sparkles, MessageCircle } from 'lucide-react';
+import { RtoCBrandLogo } from './RtoCBrandLogo';
 
 interface NavbarProps {
   activePage: ActivePage;
@@ -63,23 +64,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           className="group cursor-pointer shrink-0"
           aria-label="RtoC LABS Homepage"
         >
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#071426] p-0.5 border border-slate-700/80 shadow-md group-hover:border-[#22D3EE]/80 group-hover:scale-105 transition-all duration-300 flex items-center justify-center shrink-0">
-              <img
-                src="/assets/rtoc_r_logo.png"
-                alt="RtoC LABS R Logo"
-                className="w-full h-full object-contain"
-              />
-            </div>
-            <div className="flex flex-col text-left">
-              <span className="text-xl font-bold tracking-tight text-white font-heading leading-tight whitespace-nowrap">
-                RtoC <span className="text-[#22D3EE]">LABS</span>
-              </span>
-              <span className="text-[10px] uppercase tracking-wider text-slate-400 font-medium">
-                Reason to Create
-              </span>
-            </div>
-          </div>
+          <RtoCBrandLogo variant="lockup" size="md" />
         </button>
 
         {/* Zone 2: Clean Single-Line Text Links */}

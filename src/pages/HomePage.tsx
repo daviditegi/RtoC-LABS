@@ -117,7 +117,17 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProgram,
               {/* Clean Brand Kicker with R logo */}
               <div className="inline-flex items-center gap-2.5 text-xs font-semibold text-[#22D3EE] uppercase tracking-wider bg-[#0B1F3A]/90 px-3 py-1.5 rounded-full border border-slate-700/80">
                 <div className="w-5 h-5 rounded-md overflow-hidden bg-[#071426] p-0.5 border border-slate-700 flex items-center justify-center">
-                  <img src="/assets/rtoc_r_logo.png" alt="R Logo" className="w-full h-full object-contain" />
+                  <img
+                    src="/assets/rtoc_r_logo.png"
+                    alt="R Logo"
+                    className="w-full h-full object-contain"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (!target.src.endsWith('/rtoc_r_logo.png')) {
+                        target.src = '/rtoc_r_logo.png';
+                      }
+                    }}
+                  />
                 </div>
                 <span>RtoC LABS</span>
                 <span aria-hidden="true" className="text-slate-500">·</span>
@@ -168,10 +178,16 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProgram,
             <div className="lg:col-span-5 relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-slate-700/80 bg-[#0B1F3A] group relative">
                 <img
-                  src="/src/assets/images/hero_african_youth_tech_lab_1793267882421.jpg"
+                  src="/assets/images/hero_african_youth_tech_lab_1793267882421.jpg"
                   alt="Young African technology learners collaborating in a modern tech studio"
                   className="w-full h-[360px] sm:h-[420px] object-cover group-hover:scale-102 transition-transform duration-500"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (target.src.includes('/assets/images/')) {
+                      target.src = '/images/hero_african_youth_tech_lab_1793267882421.jpg';
+                    }
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#071426] via-transparent to-transparent opacity-85" />
 
@@ -358,6 +374,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProgram,
                         alt={prog.name}
                         className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-300"
                         referrerPolicy="no-referrer"
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          if (target.src.includes('/assets/images/')) {
+                            target.src = target.src.replace('/assets/images/', '/images/');
+                          }
+                        }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                       
