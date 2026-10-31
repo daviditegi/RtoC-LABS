@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { ActivePage, Program, ProgramCategory } from '../types';
-import { PROGRAMS_DATA, CONFERENCE_INFO } from '../data/content';
+import { PROGRAMS_DATA } from '../data/content';
+import { useConference } from '../hooks/useConference';
 import { 
   Search, 
   ArrowRight, 
@@ -24,6 +25,7 @@ interface ProgramsPageProps {
 }
 
 export const ProgramsPage: React.FC<ProgramsPageProps> = ({ onNavigate, onSelectProgram }) => {
+  const conf = useConference();
   const [selectedCategory, setSelectedCategory] = useState<ProgramCategory>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [showFutureTracks, setShowFutureTracks] = useState(false);
@@ -97,7 +99,7 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({ onNavigate, onSelect
                 Upcoming
               </span>
               <span>
-                <strong>{CONFERENCE_INFO.title}:</strong> Nov 9 – Nov 30, 2026 via Google Meet. General Fee: <strong>KSh 3,000 / $25</strong>.
+                <strong>{conf.title}:</strong> {conf.dates} via {conf.deliveryVenue}. Application Deadline: <span className="font-bold text-amber-600 dark:text-amber-300 underline underline-offset-2">{conf.deadline}</span>. General Fee: <strong>KSh 3,000 / $25</strong>.
               </span>
             </div>
             <div className="text-[11px] text-blue-800 dark:text-blue-300">

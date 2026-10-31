@@ -49,9 +49,27 @@ export const CORE_VALUES = [
   },
 ];
 
-export const CONFERENCE_INFO = {
+export interface ConferenceConfig {
+  title: string;
+  dates: string;
+  deadline: string;
+  deadlineDate?: string;
+  deliveryVenue: string;
+  feeKsh: number;
+  feeUsd: number;
+  forexCommitmentKsh: number;
+  contactPhone: string;
+  accessPolicy: string;
+  status: string;
+  heroImage: string;
+  highlights: string[];
+}
+
+export const DEFAULT_CONFERENCE_INFO: ConferenceConfig = {
   title: 'RtoC LABS Digital Skills Learning Conference 2026',
   dates: '9 November – 30 November 2026',
+  deadline: '7 November 2026',
+  deadlineDate: '2026-11-07',
   deliveryVenue: 'Google Meet (Interactive Live Virtual Sessions)',
   feeKsh: 3000,
   feeUsd: 25,
@@ -67,6 +85,43 @@ export const CONFERENCE_INFO = {
     'Distinction: Specialized Forex classes require a separate KSh 1,000 commitment fee',
   ],
 };
+
+export const getConferenceInfo = (): ConferenceConfig => {
+  if (typeof window === 'undefined') return DEFAULT_CONFERENCE_INFO;
+  try {
+    const raw = localStorage.getItem('rtoc_conference_info');
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      return { ...DEFAULT_CONFERENCE_INFO, ...parsed };
+    }
+  } catch (e) {
+    console.error('Failed to load conference info from storage:', e);
+  }
+  return DEFAULT_CONFERENCE_INFO;
+};
+
+export const saveConferenceInfo = (updates: Partial<ConferenceConfig>): ConferenceConfig => {
+  if (typeof window === 'undefined') return { ...DEFAULT_CONFERENCE_INFO, ...updates };
+  try {
+    const current = getConferenceInfo();
+    const updated = { ...current, ...updates };
+    localStorage.setItem('rtoc_conference_info', JSON.stringify(updated));
+    window.dispatchEvent(new CustomEvent('rtoc_conference_updated', { detail: updated }));
+    return updated;
+  } catch (e) {
+    console.error('Failed to save conference info:', e);
+    return { ...DEFAULT_CONFERENCE_INFO, ...updates };
+  }
+};
+
+// Dynamic proxy ensuring static imports always resolve the latest stored conference settings
+export const CONFERENCE_INFO: ConferenceConfig = new Proxy(DEFAULT_CONFERENCE_INFO, {
+  get(target: ConferenceConfig, prop: string | symbol) {
+    const active = getConferenceInfo();
+    const key = prop as keyof ConferenceConfig;
+    return (active[key] !== undefined ? active[key] : target[key]) as unknown;
+  },
+});
 
 export const TRUST_PILLARS = [
   {

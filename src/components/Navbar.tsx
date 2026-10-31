@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { ActivePage } from '../types';
-import { BRAND_INFO, CONFERENCE_INFO } from '../data/content';
+import { BRAND_INFO } from '../data/content';
 import { Menu, X, ArrowRight, Sun, Moon, Sparkles, MessageCircle } from 'lucide-react';
 import { RtoCBrandLogo } from './RtoCBrandLogo';
+import { useConference } from '../hooks/useConference';
 
 interface NavbarProps {
   activePage: ActivePage;
@@ -18,6 +19,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onToggleTheme 
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const conf = useConference();
 
   const navLinks: { label: string; page: ActivePage }[] = [
     { label: 'Home', page: 'home' },
@@ -43,7 +45,9 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           <div className="flex items-center gap-2 truncate">
             <span className="font-semibold tracking-wide">Upcoming:</span>
-            <span className="truncate">{CONFERENCE_INFO.title} · {CONFERENCE_INFO.dates}</span>
+            <span className="truncate">
+              {conf.title} · <span className="text-cyan-200">Dates: {conf.dates}</span> · <span className="text-amber-300 font-semibold">Deadline: {conf.deadline}</span>
+            </span>
           </div>
           <button
             onClick={() => handleNavClick('register')}

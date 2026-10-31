@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ActivePage } from '../types';
-import { BRAND_INFO, CONFERENCE_INFO, PROGRAMS_DATA } from '../data/content';
+import { BRAND_INFO, PROGRAMS_DATA } from '../data/content';
+import { useConference } from '../hooks/useConference';
 import { 
   CheckCircle2, 
   AlertCircle, 
@@ -22,6 +23,7 @@ interface RegisterPageProps {
 }
 
 export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate, preselectedProgramId, onOpenTracker }) => {
+  const conf = useConference();
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
@@ -84,7 +86,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate, preselec
       
       const programObj = PROGRAMS_DATA.find((p) => p.id === selectedProgram);
       const programName = selectedProgram === 'conference-general' 
-        ? CONFERENCE_INFO.title 
+        ? conf.title 
         : (programObj?.name || 'Selected Program');
 
       const newRecord = {
@@ -142,7 +144,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate, preselec
               Join the RtoC LABS Cohort
             </h1>
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-              Register for the upcoming Digital Skills Conference ({CONFERENCE_INFO.dates}) or individual training pathways delivered live via Google Meet.
+              Register for the upcoming Digital Skills Conference (<span className="text-cyan-300 font-semibold">{conf.dates}</span> · Deadline: <span className="text-amber-300 font-semibold">{conf.deadline}</span>) or individual training pathways delivered live via {conf.deliveryVenue}.
             </p>
             <div className="pt-2">
               <button
@@ -158,38 +160,50 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate, preselec
         </div>
       </section>
 
-      {/* 2. Conference Key Fact Strip */}
+      {/* 2. Conference Key Fact Strip with Schedule & Deadline */}
       <section className="bg-white dark:bg-[#071426] border-b border-slate-200 dark:border-slate-800 py-6 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+            {/* Conference Schedule */}
             <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-[#0B1F3A] border border-slate-200 dark:border-slate-800 transition-colors">
               <span className="text-slate-500 dark:text-slate-400 block">Conference Schedule</span>
               <span className="font-bold text-slate-900 dark:text-white flex items-center gap-1.5 mt-0.5">
                 <Calendar className="w-3.5 h-3.5 text-[#2563EB] dark:text-[#22D3EE] animate-icon-pulse" />
-                {CONFERENCE_INFO.dates}
+                {conf.dates}
               </span>
             </div>
 
+            {/* Application Deadline */}
+            <div className="p-3.5 rounded-xl bg-amber-50/80 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/60 transition-colors">
+              <span className="text-amber-800 dark:text-amber-300 font-semibold block flex items-center gap-1.5">
+                <Clock className="w-3.5 h-3.5 text-amber-500 animate-icon-spin-slow" />
+                <span>Application Deadline</span>
+              </span>
+              <span className="font-bold text-amber-950 dark:text-amber-200 block mt-0.5">
+                {conf.deadline}
+              </span>
+            </div>
+
+            {/* Classroom Venue */}
             <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-[#0B1F3A] border border-slate-200 dark:border-slate-800 transition-colors">
               <span className="text-slate-500 dark:text-slate-400 block">Classroom Venue</span>
-              <span className="font-bold text-slate-900 dark:text-white flex items-center gap-1.5 mt-0.5">
-                <Monitor className="w-3.5 h-3.5 text-[#2563EB] dark:text-[#22D3EE] animate-subtle-float" />
-                Google Meet Live Classroom
+              <span className="font-bold text-slate-900 dark:text-white flex items-center gap-1.5 mt-0.5 truncate">
+                <Monitor className="w-3.5 h-3.5 text-[#2563EB] dark:text-[#22D3EE] shrink-0" />
+                <span className="truncate">{conf.deliveryVenue}</span>
               </span>
             </div>
 
+            {/* Fee */}
             <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-[#0B1F3A] border border-slate-200 dark:border-slate-800 transition-colors">
-              <span className="text-slate-500 dark:text-slate-400 block">General Conference Fee</span>
-              <span className="font-bold text-[#2563EB] dark:text-[#22D3EE] block mt-0.5">
-                KSh 3,000 or US$25
-              </span>
-            </div>
-
-            <div className="p-3.5 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/60 transition-colors">
-              <span className="text-amber-800 dark:text-amber-300 font-semibold block">Forex Education Fee</span>
-              <span className="font-bold text-amber-900 dark:text-amber-200 block mt-0.5">
-                KSh 1,000 Commitment Fee
-              </span>
+              <span className="text-slate-500 dark:text-slate-400 block">Conference Fee</span>
+              <div className="flex items-center justify-between mt-0.5">
+                <span className="font-bold text-[#2563EB] dark:text-[#22D3EE]">
+                  KSh 3,000 / $25
+                </span>
+                <span className="text-[10px] text-slate-500 dark:text-slate-400">
+                  (Forex: KSh 1,000)
+                </span>
+              </div>
             </div>
           </div>
         </div>

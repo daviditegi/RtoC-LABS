@@ -1,6 +1,7 @@
 import React from 'react';
 import { ActivePage, Program } from '../types';
-import { BRAND_INFO, TRUST_PILLARS, PROGRAMS_DATA, PORTFOLIO_DATA, CONFERENCE_INFO } from '../data/content';
+import { BRAND_INFO, TRUST_PILLARS, PROGRAMS_DATA, PORTFOLIO_DATA } from '../data/content';
+import { useConference } from '../hooks/useConference';
 import { 
   ArrowRight, 
   Sparkles, 
@@ -19,7 +20,8 @@ import {
   Code,
   Palette,
   Coins,
-  ArrowUpRight
+  ArrowUpRight,
+  Clock
 } from 'lucide-react';
 
 interface HomePageProps {
@@ -29,6 +31,7 @@ interface HomePageProps {
 }
 
 export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProgram, onOpenQuote }) => {
+  const conf = useConference();
   const getCategoryIcon = (category: string) => {
     switch (category) {
       case 'ai': return Brain;
@@ -298,15 +301,22 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProgram,
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
             
             <div className="space-y-2 max-w-2xl">
-              <div className="inline-flex items-center gap-2 text-xs font-semibold text-[#22D3EE]">
-                <Calendar className="w-3.5 h-3.5" />
-                <span>Next Session: 9 – 30 November 2026</span>
-                <span aria-hidden="true">·</span>
-                <span>Google Meet</span>
+              <div className="inline-flex flex-wrap items-center gap-2 text-xs font-semibold text-[#22D3EE]">
+                <span className="flex items-center gap-1">
+                  <Calendar className="w-3.5 h-3.5" />
+                  <span>Dates: {conf.dates}</span>
+                </span>
+                <span aria-hidden="true" className="text-slate-500">·</span>
+                <span className="flex items-center gap-1 text-amber-300">
+                  <Clock className="w-3.5 h-3.5" />
+                  <span>Application Deadline: {conf.deadline}</span>
+                </span>
+                <span aria-hidden="true" className="text-slate-500">·</span>
+                <span>{conf.deliveryVenue}</span>
               </div>
               
               <h3 className="text-xl sm:text-2xl font-bold font-heading text-white">
-                RtoC LABS Digital Skills Conference 2026
+                {conf.title}
               </h3>
 
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
